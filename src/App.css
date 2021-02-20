@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+    background-color: #eee;
+    color: #435e34;
+    text-align: center;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.search-bar {
+    background-color: #fcb;
+    border: #435e34 solid 1px;
+    padding: 3px 5px;
+}
+
+.search-form {
+    margin: 10px auto 20px;
+}
+
+.search-bar:focus {
+    border-width: 2px;
+    background-color: white;
+}
+
+.search-button {
+    color: white;
+    background-color: #435e34;
+    padding: 3px 5px;
+    border: #435e34 solid 1px
+}
+
+.result {
+    color: #191970;
+    margin: 10px auto;
+}
+
+.recipes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

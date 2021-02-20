@@ -1,5 +1,8 @@
 import {useState, useEffect} from 'react'
 import Recipe from './Recipe'
+import Header from './Header'
+import Footer from './Footer'
+import './App.css'
 
 
 function App() {
@@ -33,17 +36,22 @@ function App() {
     
     
   return (
+      <>
+      <Header />
     <div className="App">
-      <form onSubmit={getSearch} >
-        <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} />
-        <button type="submit" >Search</button>
+      <form onSubmit={getSearch} className="search-form" >
+        <input type="text" className="search-bar" value={search} onChange={(e) => setSearch(e.target.value)} />
+        <button type="submit" className="search-button" >Search</button>
       </form>
-      <div>
+      <h2 className="result">Result for {query}</h2>
+      <div className="recipes">
         { states.map(recipe => (
             <Recipe title={recipe.recipe.label} image={recipe.recipe.image} ingredients={recipe.recipe.ingredients} />
         )) }
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

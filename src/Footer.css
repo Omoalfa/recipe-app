@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 10px; */
+    background-color: #151515;
+    color: white;
+}
+
+footer div {
+    padding: 10px;
+}
+
+footer div h3 {
+    margin: 10px auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 80%;
+    margin: 10px auto;
+}
+
+li.footer-list {
+    list-style: none;
+    color: white;
+    font-size: 2em;
+    padding: 0;
+}
+
+.inspiration {
+    background-color: #4d4a42;
+    padding: 10px;
+}

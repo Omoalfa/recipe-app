@@ -1,11 +1,14 @@
+import './Recipe.css'
+
 const Recipe = ({title, image, ingredients}) => {
     return (
-        <div>
-            <h1>{title}</h1>
+        <div className="recipe-card">
+            <h2 className="recipe-title">{title}</h2>
             <img src={image} alt={`${title} image`} />
-            <ol>
+            <h3>ingredients:</h3>
+            <ol className="recipe-list">
                 {ingredients.map(ingredient => (
-                    <li>{ingredient}</li>
+                    <li className="ingredient">{ingredient.text}</li>
                 ))}
             </ol>
         </div>
